@@ -1,5 +1,12 @@
 ---
 
+- name: remove repositories
+  apt_repository:
+    repo: "ppa:jonathonf/texlive-{{ item }}"
+    state: absent
+  with_items:
+    - "{{ texlive_remove_apt_versions }}"
+
 - name: add apt repositories
   apt_repository:
     repo: "ppa:jonathonf/texlive-{{ texlive_version }}"
