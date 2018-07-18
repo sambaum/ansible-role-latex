@@ -1,2 +1,7 @@
 ---
 # defaults file for ansible-role-latex
+
+# Upgrading might not work, so you have to issue 
+# apt-get purge texlive-full && apt-get autoremove
+# manually before switching a version
+texlive_version: 2018

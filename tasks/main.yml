@@ -1,5 +1,9 @@
 ---
 
+- name: add apt repositories
+  apt_repository:
+    repo: "ppa:jonathonf/texlive-{{ texlive_version }}"
+
 - name: install packages
   package:
     name:
