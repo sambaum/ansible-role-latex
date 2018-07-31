@@ -4,7 +4,8 @@
 # Upgrading might not work, so you have to issue 
 # apt-get purge texlive-full && apt-get autoremove
 # manually before switching a version
-texlive_version: 2017
+texlive_version: 2018
 texlive_remove_apt_versions:
+  - 2015
   - 2016
-  - 2018
+  - 2017
